@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@700;900&display=swap');
+
+html{
+    padding:0px;
+    height: 100%;
+    overflow: scroll;
+}
+body{
+    width:100%;
+    height: 100%;
+background-color: white;
+padding:0px;
+margin:0;
+border: solid white;
+overflow: scroll;
+}
+
+.part{
+    width:100%;
+    min-height: 100vh;
+    padding: 10%;
+    box-sizing: border-box;
+
+}
+
+.first{
+    background-color: #005096;
+}
+.second {
+    background-color: green;
+}
+
+.axis_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    margin: auto;
+    height: 500px;
+  }
+
+
+  .hi{
+    font-family: 'Arvo';
+    color: white;
+    font-size: 20px;
+    width: 400px;
+    text-align: left;
+    margin-bottom: auto;
+    
+  }
+
+  .heila{
+    font-family: 'Spartan', sans-serif;
+    font-size: 62px;
+    width: 400px;
+    color: #C9E265;
+    
+    margin-bottom: auto;
+    font-weight: 700; font-style: normal; text-decoration: none;
+    margin-top: 30px;
+  }
+
+  .intro {
+    margin-top: 50px;
+    font-family: 'Arvo';
+    font-size: 19px;
+    color: #67CBF9;
+    
+    text-align: center;
+    letter-spacing: 1px;
+font-weight: normal;
+  }
+
+  .bio{
+    font-family: 'Arvo';
+    font-size: 16px;
+    color: white;
+    
+    width: 400px;
+    line-height: 1.6;
+  }
+
+
+  
