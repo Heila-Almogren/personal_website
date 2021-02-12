@@ -1,43 +1,56 @@
 <!DOCTYPE html>
 <html>
 <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+    <!-- <script src="{{url_for('static', filename='an.js')}}"></script> -->
     <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
+<link rel="icon" type="image/x-icon" href="{{url_for('static', filename='iconfinder_letter_H_blue_1553057.ico')}}" />
 
 <title>Heila Al-Mogren</title>
 </head>
 <body>
-    <div class="first part">
-
-    
-    <div class="axis_box">
-    <div class="main_ax">
-        <p  class="hi">
-            Hi, I'm
-        </p>
+<div class="frame">
+    <div class="yellow">
+        <div class="name">He
+            <br>ila</div>
+        <div class="gloves"><img src="{{url_for('static', filename='gloves.svg')}}" alt=""></div>
     </div>
-    <div class="main_ax">
-        <p class="heila">
-            Heila Al-Mogren,
-        </p>
+    <div class="white">
+        <div class="BioPara">
+        <table class="BioTable">
+            <tr>
+                <td class="BioTitle">Hello Alien!</td>
+            </tr>
+            <tr>
+                <td style="height:50px;">
+                    <div style="height: 5px; width:100px; background-color: #265B90;"></div>
+                </td>
+            </tr>
+            <tr>
+                <td class="bioTxt" >I’m Heila - or, as my friends call me sometimes, Dijkstra (That’s pronounced (di-kist-ra). I’m 21 years old and I’m currently a senior Software Engineering Student at King Saud University in Riyadh, Saudi Arabia.
+                    I’m obsessed of a mix of things that do not usually get together: JavaScript, philosophy, helicopters, mountains, future schools, computer networks, and finally (and most importantly) Hawaiian pizza :)</td>
+            </tr>
+            <tr><td style="height:50px;">&nbsp;</td></tr>
+            <tr>
+                <td>
+                    <img src="{{url_for('static', filename='social_icons/github.svg')}}" alt="">
+                    &nbsp;
+                    <img src="{{url_for('static', filename='social_icons/discord.svg')}}" alt="">
+                    &nbsp;
+                    <img src="{{url_for('static', filename='social_icons/linkedin.svg')}}" alt="">
+                    &nbsp;
+                    <img src="{{url_for('static', filename='social_icons/wikipedia.svg')}}" alt="">
+                </td>
+            </tr>
+        </table>
     </div>
-    <div class="main_ax">
-        <p class="intro">
-            a web developer and a senior Software Engineering student <br> at King Saud University. 
-        </p>
     </div>
-    <div class="main_ax">
-        <p class="bio">
-            My learning interests include web - specifically backend development, API's, database systems and servers. I'm passionate about computer networks and willing to continue research in this field one day.  And to achieve my learning goals, I gained Udacity Full Stack  Development Nano Degree and aiming to improve my skills by working on enriching projects.
-        </p>
+    <div class="blue">
+        
     </div>
 </div>
-</div>
-<!-- <div class="second part">
-hi
-</div> -->
-
-
 </body>
 </html>

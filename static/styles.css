@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
 
 html{
     padding:0px;
@@ -7,80 +8,88 @@ html{
     overflow: scroll;
 }
 body{
+    padding:0px;
     width:100%;
     height: 100%;
 background-color: white;
 padding:0px;
-margin:0;
-border: solid white;
+margin:0px;
+
 overflow: scroll;
 }
 
-.part{
+.frame{
     width:100%;
     min-height: 100vh;
-    padding: 10%;
+    padding: 0%;
     box-sizing: border-box;
+display: grid;
+}
+
+.yellow {
+  height: 100%;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  grid-column-start: 1;
+  grid-column-end: span 2;
+  background-color: #ffcc00 ;
+box-sizing:border-box;
+position: relative;
 
 }
 
-.first{
-    background-color: #005096;
+.name {
+  /* border: solid green; */
+font-family: 'PT Mono', monospace;
+font-weight:bolder;
+transform: rotate(90deg);
+position: absolute;
+top: 0px;
+left: 10px;
+font-size: 312px;
+color: white;
 }
-.second {
-    background-color: green;
+
+.white {
+  height: 100%;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  grid-column-start: 3;
+  grid-column-end: span 3;
+  background-color: white;
+  display: table;
+  box-sizing:border-box;
+
 }
 
-.axis_box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: fit-content;
-    margin: auto;
-    height: 500px;
-  }
+.blue {
+  height: 100%;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  grid-column-start: 6;
+  grid-column-end: 6;
+  background-color: #275283 ;
+}
+.BioPara {
+  box-sizing:border-box;
+  width:600px;
+  display: table-cell;
+ vertical-align: middle;  
+}
 
+.BioTable{
+width: 800px;
+margin: 20%;
+}
 
-  .hi{
-    font-family: 'Arvo';
-    color: white;
-    font-size: 20px;
-    width: 400px;
-    text-align: left;
-    margin-bottom: auto;
-    
-  }
-
-  .heila{
-    font-family: 'Spartan', sans-serif;
-    font-size: 62px;
-    width: 400px;
-    color: #C9E265;
-    
-    margin-bottom: auto;
-    font-weight: 700; font-style: normal; text-decoration: none;
-    margin-top: 30px;
-  }
-
-  .intro {
-    margin-top: 50px;
-    font-family: 'Arvo';
-    font-size: 19px;
-    color: #67CBF9;
-    
-    text-align: center;
-    letter-spacing: 1px;
-font-weight: normal;
-  }
-
-  .bio{
-    font-family: 'Arvo';
-    font-size: 16px;
-    color: white;
-    
-    width: 400px;
-    line-height: 1.6;
-  }
-
-
-  
+.bioTxt {
+ font-size: 30px;
+ font-family: 'PT Sans';
+ color: #A8A8A8;
+}
+.BioTitle {
+  font-family: 'PT Sans Caption';
+  font-size: 45px;
+  font-weight: bold;
+  color: #707070;
+}
