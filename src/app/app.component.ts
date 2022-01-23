@@ -1,6 +1,7 @@
 import {Component} from '@angular/core';
 import {RouterModule, Routes} from "@angular/router";
 import {slideInAnimation} from "./route-animation";
+import {Title} from "@angular/platform-browser";
 
 
 @Component({
@@ -10,9 +11,11 @@ import {slideInAnimation} from "./route-animation";
   animations: [ slideInAnimation ]
 })
 export class AppComponent {
-  title = 'personalWebsite';
+  title = 'Heila Al-Mogren';
 
-  constructor() {}
+  constructor(private titleService: Title) {
+    this.titleService.setTitle(this.title);
+  }
 
 
 }
