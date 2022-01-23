@@ -30,8 +30,9 @@ export class MainDescriptionComponent implements OnInit {
     // **** away scrappers!!
     let mailto = "mailto:";
     let name = "heila.almogren";
+    let at = "@";
     let domain = "gmail.com";
     let subject = "?subject=Hey Heila :P";
-    open(mailto+name+domain+subject, "_blank");
+    open(mailto+name+at+domain+subject, "_blank");
   }
 }
