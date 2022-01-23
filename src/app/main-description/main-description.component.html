@@ -1,0 +1,34 @@
+<div class="frame">
+  <div class="title">Hey,<br/>It’s Hey-La 👾</div>
+  <div class="subtitle">I’m a #JavaScript and #Flutter dev 🤍
+    <!--  <div class="viewMore">All Skills →</div>-->
+  </div>
+
+  <div class="description">
+    <ul>
+      <li>I graduated with a software engineering degree from KSU in Jan 2021.</li>
+      <li>I’m obsessed of a mix of things that do not usually get together:
+        JavaScript, philosophy, helicopters, mountains, future schools,
+        computer networks, and finally (and most importantly) Hawaiian pizza :)
+      </li>
+    </ul>
+
+    <div class="sequence">
+      <button (click)="mailme()" class="btn letsTalk" (mouseover)="catLaugh()" (mouseout)="catSmile()">
+        &nbsp; Let's talk {{catFace}}
+      </button>
+
+      <button routerLink="/resume" class="btn viewResume" (mouseover)="catLaugh()" (mouseout)="catSmile()">
+        View Resume
+      </button>
+      <div class="social_icons">
+        <img class="social_icon" src="https://img.icons8.com/color-glass/48/000000/twitter.png"/>
+
+        <img class="social_icon" src="https://img.icons8.com/color-glass/48/000000/linkedin.png"/>
+
+        <img class="social_icon" src="https://img.icons8.com/color-glass/48/000000/github-2.png"/>
+      </div>
+    </div>
+  </div>
+</div>
+

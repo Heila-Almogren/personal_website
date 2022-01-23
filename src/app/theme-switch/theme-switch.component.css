@@ -1,0 +1,97 @@
+[type="checkbox"] {
+  position: absolute;
+  left: -9999px;
+}
+
+.switches {
+  width: fit-content;
+}
+
+.switches .s {
+  position: relative;
+}
+
+.switches .s::before {
+
+  position: absolute;
+  top: 50%;
+  left: -30px;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  font-weight: bold;
+  color: red;
+
+}
+
+@media screen and (max-width: 600px) {
+  .switches .s::before {
+    display: none;
+  }
+}
+
+.switches label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.switches span {
+  position: relative;
+  width: 50px;
+  height: 26px;
+  border-radius: 15px;
+  border: solid 2px #7D55BE;
+  transition: all 0.3s;
+}
+
+.switches span::before,
+.switches span::after {
+  content: "";
+  position: absolute;
+}
+
+.switches span::before {
+  left: 1px;
+  bottom: 1px;
+  width: 24px;
+  height: inherit;
+  padding: 0;
+  border-radius: 50%;
+  content: "🌙";
+  font-size: 18px;
+  text-align: center;
+  margin: auto;
+  z-index: 1;
+  transition: transform 0.3s;
+}
+
+.switches span::after {
+  top: 50%;
+  right: 8px;
+  width: 12px;
+  height: 12px;
+  transform: translateY(-50%);
+  /*background: url(uncheck-switcher.svg);*/
+
+  background-size: 12px 12px;
+}
+
+.switches [type="checkbox"]:checked + label span {
+  background: #89CFF0;
+}
+
+.switches [type="checkbox"]:checked + label span::before {
+  transform: translateX(24px);
+  content: "🌞";
+
+}
+
+.switches [type="checkbox"]:checked + label span::after {
+  width: 14px;
+  height: 14px;
+  left: 8px;
+
+
+  /*background-image: url(checkmark-switcher.svg);*/
+  background-size: 14px 14px;
+}

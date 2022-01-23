@@ -1,0 +1,10 @@
+<main-bar></main-bar>
+
+<div
+  [@routeAnimations]="o && o.activatedRouteData
+      && o.activatedRouteData['animation']"
+  style="height: 80%; border: solid 1px var(--background-color)">
+  <router-outlet #o="outlet"></router-outlet>
+</div>
+
+<app-made-with-love></app-made-with-love>

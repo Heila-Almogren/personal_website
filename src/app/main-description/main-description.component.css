@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+
+.frame {
+
+  height: fit-content;
+  width: 700px;
+  max-width: 70%;
+  margin: 100px auto;
+  /*border-left: solid white;*/
+  padding: 30px;
+
+/*border: solid var(--text-mono-color);*/
+}
+
+/*font-family: 'Caveat', cursive;*/
+.title {
+  color: var(--text-mono-color);
+  font-size: 50px;
+
+}
+
+.subtitle {
+  font-size: 23px;
+  color: var(--lightPurple);
+
+}
+
+.viewMore {
+  font-family: 'Caveat', cursive;
+  display: inline;
+  color: darkgrey;
+}
+
+.description {
+  margin-top: 10px;
+max-width: 90%;
+  color: var(--text-mono-color);
+  line-height: 25px;
+  font-size: 18px;
+  /*font-family: 'Caveat', cursive;*/
+}
+
+
+.ul {
+  list-style-type: armenian;
+}
+
+.letsTalk {
+  background-color: var(--lets-talk-button-bc);
+  color: var(--lets-talk-button-tc);
+
+  border: none;
+}
+
+.viewResume {
+
+  background-color: transparent;
+  border: solid 2px var(--lightPurple);
+  color: var(--lightPurple);
+}
+
+.viewResume:hover {
+  background-color: #c9b8e4;
+}
+
+.btn {
+  height: 40px;
+  width: 120px;
+  outline: none;
+
+  border-radius: 20px;
+  font-family: var(--fontFamily);
+  font-size: 15px;
+  text-align: center;
+  cursor: pointer;
+  line-height: 10px;
+}
+
+.letsTalk:hover {
+  border: solid 2px var(--lightPurple);
+}
+
+.social_icon {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  vertical-align: center;
+  transition: transform .25s;
+  box-sizing: border-box;
+  display: block;
+
+}
+
+.social_icon:hover {
+  transform: scale(1.2);
+}
+
+.sequence {
+  display: flex;
+  margin-left: 40px;
+  align-items: center;
+  align-content: space-between;
+  flex-wrap: wrap;
+  flex-shrink: 1;
+  row-gap: 20px;
+column-gap: 25px;
+  text-align: center;
+}
+
+.sequence div {
+  align-self: center;
+  flex-basis: 50%;
+}
+
+.social_icons {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
