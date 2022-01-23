@@ -9,4 +9,4 @@ ngApp.get('/*', function (request, response) {
   response.sendFile(path.join(__dirname, '/dist/personal-website/index.html'));
 });
 
-ngApp.listen(process.env.PORT || 3000);
+ngApp.listen(process.env.PORT || 8080);
