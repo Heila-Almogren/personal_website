@@ -1,7 +1,8 @@
 import {Component} from '@angular/core';
-import {RouterModule, Routes} from "@angular/router";
+import {Router, RouterModule, Routes, RoutesRecognized} from "@angular/router";
 import {slideInAnimation} from "./route-animation";
 import {Title} from "@angular/platform-browser";
+import {filter, pairwise} from "rxjs";
 
 
 @Component({
@@ -15,9 +16,27 @@ export class AppComponent {
 
   constructor(private titleService: Title) {
     this.titleService.setTitle(this.title);
+    this.portrait = window.matchMedia("(max-width: 767px)").matches
+
+
+
+  }
+
+  portrait: boolean | undefined;
+
+  ngOnInit(): void {
+
   }
 
 
+  ToggleSideMenu(){
+    this.portrait = !this.portrait
+  }
+
+  onResize() {
+    const query = window.matchMedia("(max-width: 767px)")
+    this.portrait = query.matches;
+  }
 }
 
 

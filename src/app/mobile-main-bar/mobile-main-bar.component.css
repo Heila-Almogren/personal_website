@@ -1,0 +1,11 @@
+.mobileMenuIcon {
+  cursor: pointer;
+  transition: opacity 0.2s;
+  float: right;
+  margin: 50px;
+  z-index: 1000;
+  color: var(--text-mono-color);
+}
+.mobileMenuIcon:hover {
+  opacity: 70%
+}

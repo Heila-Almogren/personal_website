@@ -5,6 +5,7 @@ import {HomePageComponent} from "./home-page/home-page.component";
 import {ResumePageComponent} from "./resume-page/resume-page.component";
 import {ProjectsPageComponent} from "./projects-page/projects-page.component";
 import {AboutPageComponent} from "./about-page/about-page.component";
+import {MobileMenuComponent} from "./mobile-menu/mobile-menu.component";
 
 
 const routes: Routes = [
@@ -15,7 +16,9 @@ const routes: Routes = [
   {path: "projects", component: ProjectsPageComponent,
   data: {animation: 'projects'} },
   {path: "about", component: AboutPageComponent,
-  data: {animation: 'about'} }
+  data: {animation: 'about'} },
+  {path: "mobileMenu", component: MobileMenuComponent,
+  data: {animation: 'mobileMenu'} },
 ]
 
 @NgModule({
@@ -24,6 +27,7 @@ const routes: Routes = [
     CommonModule,
     RouterModule.forRoot(routes)
   ],
-  exports: [ RouterModule ]
+  exports: [ RouterModule ],
+  providers: []
 })
 export class AppRoutingModule { }

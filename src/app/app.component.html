@@ -1,15 +1,8 @@
-<main-bar></main-bar>
-
-<div
+<main-bar *ngIf="!portrait"></main-bar>
+<app-mobile-main-bar *ngIf="portrait"></app-mobile-main-bar>
+<div (window:resize)="onResize()"
   [@routeAnimations]="o && o.activatedRouteData
       && o.activatedRouteData['animation']"
   style="min-height:90%; border: solid 1px var(--background-color)">
   <router-outlet #o="outlet"></router-outlet>
 </div>
-
-<app-made-with-love style="clear: both;
-    position: relative;
-    height: 200px;
-    margin-top: -200px;">
-
-</app-made-with-love>

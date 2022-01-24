@@ -15,6 +15,11 @@ import { ProjectsPageComponent } from './projects-page/projects-page.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AboutPageComponent } from './about-page/about-page.component';
 import { UnderConstructionComponent } from './under-construction/under-construction.component';
+import { MobileMainBarComponent } from './mobile-main-bar/mobile-main-bar.component';
+import { NameComponent } from './name/name.component';
+import { MobileMenuComponent } from './mobile-menu/mobile-menu.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
 
 @NgModule({
   declarations: [
@@ -28,12 +33,16 @@ import { UnderConstructionComponent } from './under-construction/under-construct
     ProjectsPageComponent,
     AboutPageComponent,
     UnderConstructionComponent,
+    MobileMainBarComponent,
+    NameComponent,
+    MobileMenuComponent,
   ],
   imports: [
     BrowserModule,
     RouterModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent],
