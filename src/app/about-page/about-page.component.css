@@ -1,5 +1,6 @@
 ol {
   counter-reset: counter;
+  margin-left: 0;
 }
 
 ol li {
