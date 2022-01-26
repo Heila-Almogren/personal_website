@@ -1,0 +1,16 @@
+.portfolioTitle {
+  width: 90%;
+  margin: auto;
+  margin-top: 100px;
+  display: flex;
+  position: relative;
+}
+
+.portfolioTitle:after {
+  content: '';
+  width: 60px;
+  height: 4px;
+  background: var(--lightPurple);
+  position: absolute;
+  bottom: -10px;
+}
