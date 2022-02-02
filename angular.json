@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "personalWebsite": {
+    "Heila": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -68,10 +68,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "personalWebsite:build:production"
+              "browserTarget": "Heila:build:production"
             },
             "development": {
-              "browserTarget": "personalWebsite:build:development"
+              "browserTarget": "Heila:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -79,7 +79,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "personalWebsite:build"
+            "browserTarget": "Heila:build"
           }
         },
         "test": {
@@ -102,5 +102,5 @@
       }
     }
   },
-  "defaultProject": "personalWebsite"
+  "defaultProject": "Heila"
 }
